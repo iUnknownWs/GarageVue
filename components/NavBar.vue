@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <NuxtLink to="/">
-      <NuxtImg class="h-14" src="/icons/logo.svg" alt="" />
+      <NuxtImg class="h-14" src="/logo.svg" alt="" />
     </NuxtLink>
   </div>
   <div class="flex row justify-end w-full text-[#5E5D5B]">
@@ -23,7 +23,7 @@
       >
         <NuxtLink to="/" class="text-2xl font-bold flex row">
           Más
-          <NuxtImg class="pt-1 w-6" src="/icons/down.svg" alt="icon" />
+          <NuxtImg class="pt-1 w-6" src="/down.svg" alt="icon" />
         </NuxtLink>
         <ul
           tabindex="0"
@@ -38,7 +38,7 @@
       </li>
       <li class="hidden lg:block hover:border-b-4 border-[#5E5D5B]">
         <NuxtLink to="/" class="text-xl font-bold flex row items-center">
-          <NuxtImg class="pr-1 w-7" src="/icons/phone.svg" alt="icon" />
+          <NuxtImg class="pr-1 w-7" src="/phone.svg" alt="icon" />
           <span class="text-nowrap">931 22 87 33</span>
         </NuxtLink>
       </li>
@@ -47,17 +47,17 @@
           to="/"
           class="lg:hidden text-xl font-bold flex row items-center"
         >
-          <NuxtImg class="pr-1 w-7 text-[#5E5D5B]" src="/icons/phone.svg" alt="icon" />
+          <NuxtImg class="pr-1 w-7 text-[#5E5D5B]" src="/phone.svg" alt="icon" />
         </NuxtLink>
         <NuxtLink to="/">
-          <NuxtImg class="w-7" src="/icons/heart.svg" alt="icon" />
+          <NuxtImg class="w-7" src="/heart.svg" alt="icon" />
         </NuxtLink>
         <NuxtLink to="/">
-          <NuxtImg class="w-8 text-[#5E5D5B]" src="/icons/user.svg" alt="icon" />
+          <NuxtImg class="w-8 text-[#5E5D5B]" src="/user.svg" alt="icon" />
         </NuxtLink>
         <NuxtImg
           class="lg:hidden pl-2 w-10 text-[#5E5D5B]"
-          src="/icons/menu.svg"
+          src="/menu.svg"
           alt="icon"
         />
       </li>
