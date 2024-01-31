@@ -17,5 +17,31 @@ export default {
   theme: {
     extend: {},
   },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#590004",
+
+          "secondary": "#545D7A",
+
+          "accent": "#FCA311",
+
+          "neutral": "#ffffff",
+
+          "base-100": "#474A50",
+
+          "info": "#8B8B8B",
+
+          "success": "#22c55e",
+
+          "warning": "#fcd34d",
+
+          "error": "#dc2626",
+        },
+      },
+    ],
+  },
   plugins: [require("daisyui")],
 }

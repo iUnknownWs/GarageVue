@@ -27,10 +27,13 @@
         </NuxtLink>
         <ul
           tabindex="0"
-          class="dropdown-content z-[1] menu p-2 shadow bg-white w-52 mt-1 font-semibold text-sm"
+          class="dropdown-content z-[1] menu active:rounded-none p-2 shadow bg-white w-52 mt-1 font-semibold text-sm "
         >
-          <li><a>Sobre Nosotros</a></li>
-          <li><a>Performance Test</a></li>
+          <li class="text-black hover:bg-primary hover:text-white"><a>Sobre Nosotros</a></li>
+          <li class="text-black hover:bg-primary hover:text-white"><a>Performance Test</a></li>
+          <li class="text-black hover:bg-primary hover:text-white"><a>Clásicos</a></li>
+          <li class="text-black hover:bg-primary hover:text-white"><a>Contacto</a></li>
+          <li class="text-black hover:bg-primary hover:text-white"><a>Preguntas Frecuentes</a></li>
         </ul>
       </li>
       <li class="hidden lg:block hover:border-b-4 border-[#5E5D5B]">
