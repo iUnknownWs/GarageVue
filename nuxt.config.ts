@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Monserrat: true,
+      Montserrat: [400, 600, 700],
       Orbitron: 900,
     }
   }

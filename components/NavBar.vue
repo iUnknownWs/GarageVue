@@ -1,58 +1,71 @@
 <template>
-  <div class="w-full">
+  <div class="">
     <NuxtLink to="/">
-      <NuxtImg class="h-12" src="/logo.svg" alt="" />
+      <NuxtImg class="h-14" src="/logo.svg" alt="" />
     </NuxtLink>
   </div>
-  <div>
-    <ul class="flex row justify-end gap-8 text-[#5E5D5B] items-center">
-      <li>
-        <NuxtLink to="/" class="text-2xl font-bold">
-          Coches
-        </NuxtLink>
+  <div class="flex row justify-end w-full text-[#5E5D5B]">
+    <ul class="flex row gap-14 items-center">
+      <li class="hidden lg:block hover:border-b-4 border-[#5E5D5B]">
+        <NuxtLink to="/" class="text-2xl font-bold"> Coches </NuxtLink>
       </li>
-      <li>
-        <NuxtLink to="/" class="text-2xl font-bold">
-          Financiación
-        </NuxtLink>
+      <li class="hidden lg:block hover:border-b-4 border-[#5E5D5B]">
+        <NuxtLink to="/" class="text-2xl font-bold"> Financiación </NuxtLink>
       </li>
-      <li>
-        <NuxtLink to="/" class="text-2xl font-bold">
-          Magazine
-        </NuxtLink>
+      <li class="hidden lg:block hover:border-b-4 border-[#5E5D5B]">
+        <NuxtLink to="/" class="text-2xl font-bold"> Magazine </NuxtLink>
       </li>
-      <li>
-        <NuxtLink to="/" class="text-2xl font-bold">
-          Vender
-        </NuxtLink>
+      <li class="hidden lg:block hover:border-b-4 border-[#5E5D5B]">
+        <NuxtLink to="/" class="text-2xl font-bold"> Vender </NuxtLink>
       </li>
-      <li>
+      <li
+        class="dropdown dropdown-hover hidden lg:block hover:border-b-4 border-[#5E5D5B]"
+      >
         <NuxtLink to="/" class="text-2xl font-bold flex row">
           Más
-          <NuxtImg class="pt-1" src="down.svg" alt="icon" />
+          <NuxtImg class="pt-1 w-6" src="down.svg" alt="icon" />
+        </NuxtLink>
+        <ul
+          tabindex="0"
+          class="dropdown-content z-[1] menu p-2 shadow bg-white w-52 mt-1 font-semibold text-sm"
+        >
+          <li><a>Sobre Nosotros</a></li>
+          <li><a>Performance Test</a></li>
+        </ul>
+      </li>
+      <li class="hidden lg:block hover:border-b-4 border-[#5E5D5B]">
+        <NuxtLink to="/" class="text-xl font-bold flex row items-center">
+          <NuxtImg class="pr-1 w-7" src="phone.svg" alt="icon" />
+          <span class="text-nowrap">931 22 87 33</span>
         </NuxtLink>
       </li>
-      <li>
-        <NuxtLink to="/" class="text-2xl font-bold flex row text-nowrap">
-          <NuxtImg class="pr-1" src="phone.svg" alt="icon" />
-          <span>931 22 87 33</span>
+      <li class="flex row items-center gap-1">
+        <NuxtLink
+          to="/"
+          class="lg:hidden text-xl font-bold flex row items-center"
+        >
+          <NuxtImg class="pr-1 w-7 text-[#5E5D5B]" src="phone.svg" alt="icon" />
         </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/" class="text-2xl font-bold flex row text-nowrap">
-          <NuxtImg class="pr-1 w-full h-full" src="heart.svg" alt="icon" />
+        <NuxtLink to="/">
+          <NuxtImg class="w-7" src="heart.svg" alt="icon" />
         </NuxtLink>
-        <NuxtLink to="/" class="text-2xl font-bold flex row text-nowrap">
-          <NuxtImg class="pr-1 w-full h-full" src="user.svg" alt="icon" />
+        <NuxtLink to="/">
+          <NuxtImg class="w-8 text-[#5E5D5B]" src="user.svg" alt="icon" />
         </NuxtLink>
+        <NuxtImg
+          class="lg:hidden pl-2 w-10 text-[#5E5D5B]"
+          src="menu.svg"
+          alt="icon"
+        />
       </li>
     </ul>
   </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style>
+li {
+  color: #5e5d5b;
+}
 </style>
