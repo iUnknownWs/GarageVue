@@ -2,17 +2,17 @@
 export default {
   content: [
     [
-      'components/**/*.{vue,js,ts}',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'composables/**/*.{js,ts}',
-      'plugins/**/*.{js,ts}',
-      'App.{js,ts,vue}',
-      'app.{js,ts,vue}',
-      'Error.{js,ts,vue}',
-      'error.{js,ts,vue}',
-      'content/**/*.md'
-    ]
+      "components/**/*.{vue,js,ts}",
+      "layouts/**/*.vue",
+      "pages/**/*.vue",
+      "composables/**/*.{js,ts}",
+      "plugins/**/*.{js,ts}",
+      "App.{js,ts,vue}",
+      "app.{js,ts,vue}",
+      "Error.{js,ts,vue}",
+      "error.{js,ts,vue}",
+      "content/**/*.md",
+    ],
   ],
   theme: {
     extend: {},
@@ -21,27 +21,26 @@ export default {
     themes: [
       {
         mytheme: {
+          primary: "#590004",
 
-          "primary": "#590004",
+          secondary: "#5E5D5B",
 
-          "secondary": "#545D7A",
+          accent: "#FCA311",
 
-          "accent": "#FCA311",
-
-          "neutral": "#ffffff",
+          neutral: "#ffffff",
 
           "base-100": "#474A50",
 
-          "info": "#8B8B8B",
+          info: "#8B8B8B",
 
-          "success": "#22c55e",
+          success: "#22c55e",
 
-          "warning": "#fcd34d",
+          warning: "#fcd34d",
 
-          "error": "#dc2626",
+          error: "#dc2626",
         },
       },
     ],
   },
   plugins: [require("daisyui")],
-}
+};
