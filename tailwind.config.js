@@ -1,43 +1,44 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    [
-      "components/**/*.{vue,js,ts}",
-      "layouts/**/*.vue",
-      "pages/**/*.vue",
-      "composables/**/*.{js,ts}",
-      "plugins/**/*.{js,ts}",
-      "App.{js,ts,vue}",
-      "app.{js,ts,vue}",
-      "Error.{js,ts,vue}",
-      "error.{js,ts,vue}",
-      "content/**/*.md",
-    ],
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "gris2": "#8B8B8B",
+      }
+    },
   },
   daisyui: {
+
     themes: [
       {
+
         mytheme: {
-          primary: "#590004",
 
-          secondary: "#5E5D5B",
+          "primary": "#590004",
 
-          accent: "#FCA311",
+          "secondary": "#FCA311",
 
-          neutral: "#ffffff",
+          "accent": "#255F85",
 
-          "base-100": "#474A50",
+          "neutral": "#222220",
 
-          info: "#8B8B8B",
+          "base-100": "#fcfcfc",
 
-          success: "#22c55e",
+          "info": "#255F85",
 
-          warning: "#fcd34d",
+          "success": "#2D4739",
 
-          error: "#dc2626",
+          "warning": "#FCA311",
+
+          "error": "#590004",
         },
       },
     ],

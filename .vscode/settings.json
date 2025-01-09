@@ -1,7 +1,16 @@
 {
   "tailwindCSS.emmetCompletions": true,
-  "audioCues.save": "never",
   "eslint.codeActionsOnSave.rules": null,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "accessibility.signals.save": {
+    "sound": "never"
+  },
+  "cSpell.words": [
+    "allowtransparency",
+    "businessunit",
+    "inmediate",
+    "lightwidget",
+    "Semiusados"
+  ]
 }

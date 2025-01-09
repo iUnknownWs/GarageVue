@@ -1,7 +1,6 @@
 <template>
-  <section id="used" class="relative h-[90vh] bg-white px-4 lg:pl-20">
+  <section class="relative my-12 bg-white px-4 lg:my-32">
     <slot />
-    <BtnSquare class="absolute bottom-0 left-1/2 hidden lg:block" />
   </section>
 </template>
 

@@ -1,22 +1,23 @@
 <template>
-  <div class="flex flex-col lg:flex-row">
+  <div class="flex flex-col lg:ml-20 lg:flex-row">
     <div class="flex flex-col text-center lg:max-w-2xl lg:text-start">
       <NuxtImg class="w-20 pt-10 lg:w-60" src="/decoration.svg" alt="icon" />
       <h1 class="pt-4 text-2xl text-black lg:pt-8 lg:text-7xl">
-        Consecionario:<br />Vehiculos Semiusados
+        Concesionario:<br />Vehículos Semiusados
       </h1>
-      <p class="pt-4 text-base font-medium text-gray-600 lg:pt-8 lg:text-3xl">
+      <p class="pt-4 text-base font-medium text-[#5e5d5b] lg:pt-8 lg:text-3xl">
         La mejor selección de coches de segunda mano. Explora nuestras
         categorías y empieza tu camino
       </p>
       <ButtonP class="py-4" :label="label" />
     </div>
     <Carousel
-      class="flex w-full flex-col justify-center lg:w-[60vw]"
+      class="flex flex-col justify-center lg:w-[55vw]"
       :wrap-around="true"
       :items-to-show="1"
       :breakpoints="breakpoints"
       :transition="500"
+      :gap="10"
     >
       <Slide v-for="car in cars" :key="car.id">
         <UsedCard :image="car.image" :title="car.title" :label="car.label" />
@@ -33,14 +34,18 @@ const carImage = "/img/car1.webp";
 const car2Image = "/img/car2.webp";
 const car3Image = "/img/car3.webp";
 const car4Image = "/img/car4.webp";
+
 interface Car {
   id: string;
   image: string;
   title: string;
   label: string;
 }
-const label: string = "Ver Todos";
+
+const label: string = "Ver todos";
+
 const breakpoints = { 1024: { itemsToShow: 3 } };
+
 const cars: Car[] = [
   {
     id: "1",
@@ -51,7 +56,7 @@ const cars: Car[] = [
   {
     id: "2",
     image: car2Image,
-    title: "Auntenticida en estado puro",
+    title: "Autenticidad en estado puro",
     label: "Ver gama sport",
   },
   {
@@ -86,7 +91,7 @@ const cars: Car[] = [
 .carousel__prev,
 .carousel__next {
   display: none;
-  bottom: -20px;
+  bottom: -40px;
   top: auto;
   width: 48px;
   height: 48px;
@@ -112,7 +117,7 @@ const cars: Car[] = [
 @media (min-width: 1024px) {
   .carousel__item {
     height: 600px;
-    width: 300px;
+    width: 100%;
   }
 }
 
